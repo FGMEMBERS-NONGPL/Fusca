@@ -1,0 +1,172 @@
+<!-- FDM for "VW Fusca 64" based on Jeep FDM By Detlef FABER -->
+
+<airplane mass="900">
+
+  <approach speed="97" aoa="6" fuel="0.28">
+    <control-setting axis="/controls/engines/engine[0]/throttle" value="0.25"/>
+    <!-- <control-setting axis="/controls/engines/engine[1]/throttle" value="0.25"/> -->
+  </approach>
+
+  <cruise speed="145" alt="25000" fuel="0.8">
+    <control-setting axis="/controls/engines/engine[0]/throttle" value="1.0"/>
+    <!-- <control-setting axis="/controls/engines/engine[1]/throttle" value="1.0"/> -->
+  </cruise>
+
+  <fuselage ax="1.918"  ay="0" az="-0.008" bx="-1.905" by="0" bz="-0.008" width="1.566" taper="1" cy="2.5" cz="2.5"/>
+
+  <wing x="-0.125" y="0.52" z="0.23"
+        taper="1.0"
+        length="1.7"
+        chord="1.4"
+        dihedral="15"
+        incidence="-0.25"
+        twist="-0.15"
+        camber="0.002">
+      <stall aoa="15" width="3" peak="1.5"/>
+  </wing>
+
+<hstab x="-4.18" y="0.00" z="0.79"
+       taper="1.0"
+       length="1.53"
+       chord="0.6"
+       effectiveness="1.7"
+       incidence="0.5"
+       camber="0.02"
+       sweep="0.0">
+  <stall aoa="16" width="4" peak="2.0"/>
+  <flap0 start="0.0" end="1.1" lift="1.71" drag="1.29"/>
+  <control-input axis="/controls/flight/elevator" control="FLAP0"/>
+  <control-input axis="/controls/flight/elevator-trim" control="FLAP0"/>
+  <control-output control="FLAP0" prop="/surface-positions/elevator-pos-norm"/>
+</hstab>
+
+  <!-- <mstab x="-4.0" y="0.0" z="0.0"
+         taper="1.0"
+         length="1.8"
+         chord="1.62"
+         camber="0.07"
+         effectiveness="2.8">
+      <stall aoa="17" width="4" peak="2.0"/>
+     <flap0 start="0" end="1" lift="1.95" drag="1.2"/>
+    <control-input axis="/controls/flight/elevator" control="FLAP0" invert="false"/>
+         <control-input axis="/controls/flight/elevator-trim" control="FLAP0" invert="false"/>
+  <control-output control="FLAP0" prop="/surface-positions/elevator-pos-norm" min="1" max="-1"/>
+  </mstab> -->
+
+<vstab x="-4.21" y="0" z="0.26"
+       taper="1.0" 
+       length="1.95"
+       chord="1.39"
+       effectiveness="1.8"
+       sweep="0">
+  <stall aoa="18" width="5" peak="2.5"/>
+  <flap0 start="-0.31" end="1" lift="1.55" drag="1.24"/>
+  <control-input axis="/controls/flight/rudder" square="true" control="FLAP0" invert="true"/>
+  <control-input axis="/controls/flight/rudder-trim" control="FLAP0" invert="true"/>
+  <control-output control="FLAP0" prop="/surface-positions/rudder-pos-norm"
+    min="1" max="-1"/>
+</vstab>
+
+ <!-- <propeller x="0.82" y="0" z="0.288"
+         radius="6.75"
+         mass="92.0"
+         moment="0.3"
+         blades="8"
+         cruise-alt="5000"
+         cruise-power="40"
+	   cruise-speed="30"
+         cruise-rpm="1500"
+         gear-ratio="0.20"
+         fine-stop="0.25"
+         coarse-stop="2.0"
+         takeoff-power="40" 
+         min-rpm="60"
+         takeoff-rpm="1600"
+         contra="1"> 
+  <actionpt x="0.30" y="0" z="0.189" />
+ <control-input axis="/controls/engines/engine[0]/propeller-pitch" control="ADVANCE"/>
+ <piston-engine eng-rpm="4500"
+                max-torque="3000"
+                eng-power="40.0"
+                displacement="74.03"
+                bore="3.103"
+                stroke="2.526"
+                min-throttle="0.045" 
+                compression-ratio="7.0"/>
+  <control-input axis="/controls/engines/engine[0]/throttle" control="THROTTLE"/>
+  <control-input axis="/controls/engines/engine[0]/starter" control="STARTER"/>
+  <control-input axis="/controls/engines/engine[0]/magnetos" control="MAGNETOS"/>
+  <control-input axis="/controls/engines/engine[0]/mixture" control="MIXTURE"/>           
+</propeller> -->
+
+  <jet x="1.278" y="0" z="0.188"
+       n1-idle="20"
+       n1-max="100"
+       n2-idle="20"
+       n2-max="100"
+       exhaust-speed="860"
+       egt="850"
+       tsfc="0.31"
+       mass="50"
+       thrust="1900">
+       <actionpt x="1.230" y="0" z="-0.789" />
+       <control-input axis="/controls/engines/engine[0]/throttle" control="THROTTLE"/>
+  </jet>
+
+  <tank x="0.5" y="0" z="0.1" capacity="190.73"/>
+
+  <gear x="1.230" y="0.613" z="-0.789"
+        compression="0.15"
+        sfric="0.34"
+        dfric="1.13"
+        spring="2.0"
+        damp="3.8">
+        <control-input axis="/controls/gear/brake-left" control="BRAKE"/>
+        <control-input axis="/controls/flight/aileron" control="STEER" square="true" src0="-1.0" src1="1.0" dst0="-0.6" dst1="0.6"/>
+  </gear>
+
+  <gear x="1.230" y="-0.613" z="-0.789"
+        compression="0.15"
+        sfric="0.34"
+        dfric="1.13"
+        spring="2.0"
+        damp="3.8">
+        <control-input axis="/controls/gear/brake-left" control="BRAKE"/>
+        <control-input axis="/controls/flight/aileron" control="STEER" square="true" src0="-0.8" src1="0.8" dst0="-0.6" dst1="0.6"/>
+  </gear>
+
+  <gear x="-1.173" y="0.613" z="-0.780"
+        compression="0.15"
+        sfric="0.34"
+        dfric="0.95"
+        spring="2.0"
+        damp="3.8">
+        <control-input axis="/controls/gear/brake-parking" control="BRAKE"/>
+  </gear>
+
+  <gear x="-1.173" y="-0.613" z="-0.780"
+        compression="0.15"
+        sfric="0.34"
+        dfric="0.95"
+        spring="2.0"
+        damp="3.8">
+        <control-input axis="/controls/gear/brake-parking" control="BRAKE"/>
+  </gear>
+
+  <!-- <hitch name="aerotow"
+         x="-1.523" y="0" z="1.2"
+         force-is-calculated-by-other="0">
+         <tow length="10"
+              weight-per-meter="0.035"
+              elastic-constant="9000"
+              break-force="1000000"
+              mp-auto-connect-period="0.0"/>
+         <winch max-tow-length="100"
+                min-tow-length="20"
+                initial-tow-length="20"/>
+         <control-input axis="/controls/aerotow/find-aircraft" control="FINDAITOW"/>
+  </hitch> -->
+  
+  <ballast x="2.0" y="0" z="-2.235" mass="500"/>
+
+</airplane>

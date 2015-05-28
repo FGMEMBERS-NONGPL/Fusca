@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+<sim>
+    <model>
+			<livery>
+				<name type="string">AzulDiamante</name>
+				<texture>AzulDiamante-fusca.png</texture>
+			</livery>
+			<cabine>
+				<name type="string">AzulDiamante</name>
+				<texture>AzulDiamante-materi01.png</texture>
+			</cabine>        
+        
+    </model>
+</sim>
+</PropertyList>

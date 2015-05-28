@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+<sim>
+    <model>
+			<livery>
+				<name type="string">Fusca</name>
+				<texture>fusca.png</texture>
+			</livery>
+			<cabine>
+				<name type="string">Fusca</name>
+				<texture>materi01.png</texture>
+			</cabine>        
+        
+    </model>
+</sim>
+</PropertyList>

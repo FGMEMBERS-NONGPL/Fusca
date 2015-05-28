@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+<sim>
+    <model>
+			<livery>
+				<name type="string">AzulPavao</name>
+				<texture>AzulPavao-fusca.png</texture>
+			</livery>
+			<cabine>
+				<name type="string">AzulPavao</name>
+				<texture>AzulPavao-materi01.png</texture>
+			</cabine>        
+        
+    </model>
+</sim>
+</PropertyList>

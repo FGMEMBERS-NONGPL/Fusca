@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+<sim>
+    <model>
+			<livery>
+				<name type="string">BrancoPerola</name>
+				<texture>BrancoPerola-fusca.png</texture>
+			</livery>
+			<cabine>
+				<name type="string">BrancoPerola</name>
+				<texture>BrancoPerola-materi01.png</texture>
+			</cabine>        
+        
+    </model>
+</sim>
+</PropertyList>

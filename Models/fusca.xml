@@ -1,0 +1,110 @@
+<?xml version="1.0"?>
+<PropertyList>
+
+	<path>Fusca64.ac</path>
+
+	<offsets>
+		<x-m>0.0</x-m>
+		<y-m>0.0</y-m>
+		<z-m>0.0</z-m>
+		<heading-deg>0.0</heading-deg>
+	</offsets>
+	
+<!-- Livery System -->
+    <nasal>
+        <load>
+            var livery_update = aircraft.livery_update.new("Aircraft/Fusca/Models/Liveries", 10);
+        </load>
+
+        <unload>
+            livery_update.stop();
+        </unload>
+    </nasal>
+ 
+     <animation>
+        <type>material</type>
+         <object-name>Lataria</object-name>
+         <object-name>Fendas</object-name>
+         <object-name>Tampamotor</object-name>
+         <object-name>FendaTampamotor</object-name>
+         <object-name>CaixaRodaDianteira</object-name>
+         <object-name>CascoSinaleira</object-name>
+         <object-name>CascoSinaleira</object-name>
+         <property-base>sim/model/livery</property-base>
+         <texture-prop>texture</texture-prop>
+      <texture>fusca.png</texture>
+    </animation>
+    
+       <animation>
+        <type>material</type>
+         <object-name>CascoInterior</object-name>
+         <object-name>LRevestimentoPorta</object-name>
+         <object-name>RRevestimentoPorta</object-name>
+         <property-base>sim/model/cabine</property-base>
+         <texture-prop>texture</texture-prop>
+      <texture>materi01.png</texture>
+    </animation>  
+    
+<!-- Livery System -->	
+
+	
+
+<!-- ############################## -->	
+<!-- ### Instrumentos do painel ### -->
+<!-- ############################## -->	
+
+<!-- Velocimetro -->
+  <model>
+    <path>Aircraft/Fusca/Models/Instruments/Speedometer/speedometer.xml</path>
+    <offsets>
+      <x-m> -0.79 </x-m>
+      <y-m> -0.323534 </y-m>
+      <z-m> 0.244983 </z-m>
+      <roll-deg>    0.0 </roll-deg>
+      <pitch-deg>   0.0 </pitch-deg>
+      <heading-deg> 0.0 </heading-deg>
+    </offsets>
+  </model>
+
+
+<!-- Marcador de gasolina -->
+  <model>
+    <path>Aircraft/Fusca/Models/Instruments/Fuel/fuelgauge.xml</path>
+    <offsets>
+      <x-m> -0.77 </x-m>
+      <y-m> -0.193534 </y-m>
+      <z-m> 0.244983 </z-m>
+      <roll-deg>    0.0 </roll-deg>
+      <pitch-deg>   0.0 </pitch-deg>
+      <heading-deg> 0.0 </heading-deg>
+    </offsets>
+  </model>
+
+
+<!-- ################# -->
+<!-- ### ANIMACOES ### -->	
+<!-- ################# -->
+
+<!-- Direcao -->
+  <animation>
+    <type>rotate</type>
+    <object-name>volante</object-name>
+    <object-name>buzina</object-name>
+    <object-name>centrobuzina</object-name>
+    <property>controls/flight/aileron</property>
+    <factor>100</factor>
+    <center>
+      <x-m> -0.65322 </x-m>
+      <y-m> -0.324244 </y-m>
+      <z-m> 0.153716 </z-m>
+    </center>
+    <axis>
+      <x>  -3000.0 </x>
+      <y>  0.0 </y>
+      <z>  0.0 </z>
+    </axis>
+  </animation>
+
+
+
+</PropertyList>

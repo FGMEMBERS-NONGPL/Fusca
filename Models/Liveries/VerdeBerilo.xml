@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+<sim>
+    <model>
+			<livery>
+				<name type="string">VerdeBerilo</name>
+				<texture>VerdeBerilo-fusca.png</texture>
+			</livery>
+			<cabine>
+				<name type="string">VerdeBerilo</name>
+				<texture>VerdeBerilo-materi01.png</texture>
+			</cabine>        
+        
+    </model>
+</sim>
+</PropertyList>

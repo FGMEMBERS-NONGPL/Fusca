@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+<sim>
+    <model>
+			<livery>
+				<name type="string">VermelhoRubi</name>
+				<texture>VermelhoRubi-fusca.png</texture>
+			</livery>
+			<cabine>
+				<name type="string">VermelhoRubi</name>
+				<texture>VermelhoRubi-materi01.png</texture>
+			</cabine>        
+        
+    </model>
+</sim>
+</PropertyList>
