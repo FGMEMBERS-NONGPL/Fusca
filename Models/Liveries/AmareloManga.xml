@@ -1,17 +1,17 @@
 <?xml version="1.0"?>
 
 <PropertyList>
-<sim>
+  <sim>
     <model>
-			<livery>
-				<name type="string">AmareloManga</name>
-				<texture>AmareloManga-fusca.png</texture>
-			</livery>
-			<cabine>
-				<name type="string">AmareloManga</name>
-				<texture>AmareloManga-materi01.png</texture>
-			</cabine>        
-        
+      <livery>
+	<name type="string">Yellow Mango</name>
+	<texture>AmareloManga-fusca.png</texture>
+      </livery>
+      <cabine>
+	<name type="string">Yellow Mango</name>
+	<texture>AmareloManga-materi01.png</texture>
+      </cabine>        
+      
     </model>
-</sim>
+  </sim>
 </PropertyList>

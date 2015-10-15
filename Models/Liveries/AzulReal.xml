@@ -1,17 +1,17 @@
 <?xml version="1.0"?>
 
 <PropertyList>
-<sim>
+  <sim>
     <model>
-			<livery>
-				<name type="string">AzulReal</name>
-				<texture>AzulReal-fusca.png</texture>
-			</livery>
-			<cabine>
-				<name type="string">AzulReal</name>
-				<texture>AzulReal-materi01.png</texture>
-			</cabine>        
-        
+      <livery>
+	<name type="string">Royal Blue</name>
+	<texture>AzulReal-fusca.png</texture>
+      </livery>
+      <cabine>
+	<name type="string">Royal Blue</name>
+	<texture>AzulReal-materi01.png</texture>
+      </cabine>        
+      
     </model>
-</sim>
+  </sim>
 </PropertyList>
