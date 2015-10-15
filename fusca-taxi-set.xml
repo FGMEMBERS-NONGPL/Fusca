@@ -214,9 +214,9 @@
 
   <nasal>
     <fusca>
-      <file>Aircraft/fusca/Nasal/doors.nas</file>
-      <file>Aircraft/fusca/Nasal/liveries.nas</file>
-      <file>Aircraft/fusca/Nasal/immat.nas</file>
+      <file>Aircraft/Fusca/Nasal/doors.nas</file>
+      <file>Aircraft/Fusca/Nasal/liveries.nas</file>
+      <file>Aircraft/Fusca/Nasal/immat.nas</file>
     </fusca>
   </nasal>
   

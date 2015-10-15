@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+
+<!-- This texture has been modified for a Halloween Theme by IH-COL
+     Copyright 2015
+     License: Creative Commons "BY-NC-SA 4.0
+     See: ./LICENSE.txt
+-->
+
+<PropertyList>
+  <sim>
+    <model>
+      <livery>
+	<name type="string">Halloween Fusca</name>
+	<texture>Liveries/Halloween-fusca.png</texture>
+      </livery>
+      <cabine>
+	<name type="string">Halloween Fusca</name>
+	<texture>Halloween-materi01.png</texture>
+      </cabine>        
+    </model>
+  </sim>
+</PropertyList>
