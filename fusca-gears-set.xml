@@ -12,7 +12,7 @@
   <author> Isaias V. Prestes LesterBoffo/Alral-FDM from Detlef's jeep</author>
   <status>alpha</status>
   <flight-model>yasim</flight-model>
-  <aero>Fusca-gears-yasim</aero>
+  <aero>fusca-gears-yasim</aero>
 
 <!--Modifications by Alral-->
 
