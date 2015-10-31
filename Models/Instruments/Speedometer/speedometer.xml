@@ -12,7 +12,7 @@
   <type>rotate</type>
   <object-name>needle</object-name>
   <property>velocities/groundspeed-kt</property>
-  <factor>-2.11</factor>
+  <factor>-2.15</factor>
   <center>
    <x-m>0.0</x-m>
    <y-m>0.0</y-m>

@@ -20,6 +20,18 @@
             livery_update.stop();
         </unload>
     </nasal>
+
+  <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
+    <object-name>Vidro1</object-name>
+    <object-name>Mesh115</object-name>
+    <object-name>Mesh128</object-name>
+    <object-name>lensglass</object-name>
+    <object-name>busglass</object-name>
+    <object-name>littleglass</object-name>
+    <object-name>busglass</object-name>
+    <object-name>littleglass</object-name>
+  </effect>
  
      <animation>
         <type>material</type>
@@ -77,6 +89,128 @@
       <roll-deg>    0.0 </roll-deg>
       <pitch-deg>   0.0 </pitch-deg>
       <heading-deg> 0.0 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- Rembrandt lighting effects -->
+
+   <model>
+    <path>Aircraft/Fusca/Models/Lights/HeadLight.xml</path>
+    <condition>
+      <not><property>sim/rendering/rembrandt/enabled</property></not>
+    </condition>
+    <offsets>
+      <x-m> -2.078 </x-m>
+      <y-m>  -0.558 </y-m>
+      <z-m>  -0.108 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg> -2 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+   <model>
+    <path>Aircraft/Fusca/Models/Lights/HeadLight.xml</path>
+    <condition>
+      <not><property>sim/rendering/rembrandt/enabled</property></not>
+    </condition>
+    <offsets>
+      <x-m> -2.078 </x-m>
+      <y-m>  0.558 </y-m>
+      <z-m>  -0.108 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg> -2 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Fusca/Models/Lights/HeadLight-rembrandt.xml</path>
+    <condition>
+      <property>sim/rendering/rembrandt/enabled</property>
+    </condition>
+    <offsets>
+      <x-m> -2.078 </x-m>
+      <y-m>  -0.558 </y-m>
+      <z-m>  -0.108 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg> -2 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Fusca/Models/Lights/HeadLight-rembrandt.xml</path>
+    <condition>
+      <property>sim/rendering/rembrandt/enabled</property>
+    </condition>
+    <offsets>
+      <x-m> -2.078 </x-m>
+      <y-m>  0.558 </y-m>
+      <z-m>  -0.108 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg> -2 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Fusca/Models/Lights/TailLight.xml</path>
+    <condition>
+      <not><property>sim/rendering/rembrandt/enabled</property></not>
+    </condition>
+    <offsets>
+      <x-m> 1.799 </x-m>
+      <y-m>  -0.602 </y-m>
+      <z-m>  -0.1739 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Fusca/Models/Lights/TailLight.xml</path>
+    <condition>
+      <not><property>sim/rendering/rembrandt/enabled</property></not>
+    </condition>
+    <offsets>
+      <x-m> 1.799 </x-m>
+      <y-m>  0.602 </y-m>
+      <z-m>  -0.1739 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Fusca/Models/Lights/TailLight-rembrandt.xml</path>
+    <condition>
+      <property>sim/rendering/rembrandt/enabled</property>
+    </condition>
+    <offsets>
+      <x-m> 1.799 </x-m>
+      <y-m>  -0.602 </y-m>
+      <z-m>  -0.1739 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Fusca/Models/Lights/TailLight-rembrandt.xml</path>
+    <condition>
+      <property>sim/rendering/rembrandt/enabled</property>
+    </condition>
+    <offsets>
+      <x-m> 1.799 </x-m>
+      <y-m>  0.602 </y-m>
+      <z-m>  -0.1739 </z-m>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg>   0 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
 
